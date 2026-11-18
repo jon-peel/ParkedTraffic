@@ -71,7 +71,7 @@ public sealed class AirportConfig
     /// <summary>Fallback weighted airline mix, used only when the route table knows fewer than 3 airlines here.</summary>
     public List<AirlineWeight> Mix { get; set; } = [];
 
-    public static string PathFor(string icao) => Path.Combine(AppContext.BaseDirectory, "config", $"{icao.ToUpperInvariant()}.json");
+    public static string PathFor(string icao) => ConfigDir.File($"{icao.ToUpperInvariant()}.json");
 
     /// <summary>Loads config/&lt;ICAO&gt;.json; creates it from the built-in defaults on first use.</summary>
     public static AirportConfig LoadOrCreate(string icao, out string path)

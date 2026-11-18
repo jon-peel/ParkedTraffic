@@ -7,6 +7,8 @@
     <Nullable>enable</Nullable>
     <PlatformTarget>x64</PlatformTarget>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <!-- Drawn by tools\make-icon.ps1 -->
+    <ApplicationIcon>icon.ico</ApplicationIcon>
     <!-- One-click exe: dotnet publish -c Release  ->  publish\ParkedTraffic.exe -->
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <SelfContained>true</SelfContained>
@@ -25,10 +27,6 @@
     <DebuggerSupport>false</DebuggerSupport>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- Ship the current airport configs with the exe (only if not already there, so edits made in the TUI survive). -->
-    <None Include="config\*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
-  </ItemGroup>
 
   <ItemGroup>
     <!-- Native SimConnect client library (from the MSFS SDK). Copied next to the exe. -->

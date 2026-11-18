@@ -17,7 +17,7 @@ public sealed class GlobalConfig
     [System.Text.Json.Serialization.JsonIgnore]
     public HashSet<string> DefunctCodes => DefunctAirlines.Select(d => d.Airline.ToUpperInvariant()).ToHashSet();
 
-    public static string PathFor => Path.Combine(AppContext.BaseDirectory, "config", "global.json"); // next to the exe
+    public static string PathFor => ConfigDir.File("global.json");
 
     public static GlobalConfig LoadOrCreate()
     {

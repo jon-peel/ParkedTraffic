@@ -25,8 +25,9 @@ apron rules (domestic / international / cargo), and more.
 ## Use
 
 Download `ParkedTraffic-win-x64.zip` from the Releases page, unzip anywhere, load into a flight,
-and run `ParkedTraffic.exe`. Press `?` in the app for all keys. Settings are saved in a `config`
-folder next to the exe.
+and run `ParkedTraffic.exe`. Press `?` in the app for all keys. Settings (quota, apron and stand
+rules, exclusions) are saved per airport in `%LOCALAPPDATA%\ParkedTraffic\config`, so they survive
+moving or re-downloading the exe.
 
 ## Build
 
