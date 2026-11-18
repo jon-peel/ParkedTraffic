@@ -59,4 +59,10 @@ for ($i = 0; $i -lt $sizes.Count; $i++) {
 }
 foreach ($img in $images) { $bw.Write($img) }
 $bw.Close()
+
+# Same artwork as a PNG for the README.
+$png = Join-Path (Split-Path $PSScriptRoot -Parent) 'docs\icon.png'
+New-Item -ItemType Directory -Force (Split-Path $png) | Out-Null
+[System.IO.File]::WriteAllBytes($png, $images[0])
+"Wrote $png"
 "Wrote $out ($((Get-Item $out).Length) bytes, sizes: $($sizes -join ', '))"

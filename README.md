@@ -1,3 +1,5 @@
+<img src="docs/icon.png" alt="ParkedTraffic icon" width="96" align="right">
+
 # ParkedTraffic
 
 Fills the gates and stands of the airport you're at in **Microsoft Flight Simulator 2020** with parked
