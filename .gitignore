@@ -1,0 +1,10 @@
+bin/
+obj/
+publish/
+dist/
+stop
+
+# Per-airport configs are personal; the app creates defaults on first run.
+# global.json (defunct airlines) is kept as a shared default.
+config/*.json
+!config/global.json
