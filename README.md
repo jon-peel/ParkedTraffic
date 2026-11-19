@@ -2,6 +2,11 @@
 
 # ParkedTraffic
 
+> **Beta.** This is a personal project that's still being shaped. If something doesn't work
+> right - wrong aircraft, a crash, odd behaviour at your airport - please
+> [raise an issue](https://github.com/jon-peel/ParkedTraffic/issues/new) with the airport ICAO
+> and what you saw.
+
 Fills the gates and stands of the airport you're at in **Microsoft Flight Simulator 2020** with parked
 [FSLTL](https://www.fslivetrafficliveries.com/) aircraft - handy when controlling on VATSIM and the
 apron is empty. A terminal UI lists every stand so you can clear one for a VATSIM pilot, set
